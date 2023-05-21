@@ -1,0 +1,382 @@
+/*header*/
+html {
+    min-width: 460px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: #9A0080;
+    border-bottom: 5px solid #3B8E05;
+    padding: 10px;
+    z-index: 1;
+}
+
+a img {
+    display: flex;
+    height: 100px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    font-size: 35px;
+    font-style: oblique;
+}
+
+.btn_menu {
+    color: white;
+    padding: 10px;
+    margin-top: 100px;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    background-color: #80c055;
+
+}
+
+.btn_menu:hover {
+    background-color: #a7639b;
+    color: #000;
+}
+
+ul.navigation {
+    width: 100%;
+    margin: 2px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+    font-family: 'Dancing Script', cursive;
+}
+
+ul.navigation.show {
+    display: flex;
+
+}
+
+ul.navigation li {
+    list-style: none;
+    padding: 10px 15px;
+    background-color: #80c055;
+}
+
+ul.navigation a {
+    text-decoration: none;
+    color: white;
+
+}
+
+ul.navigation :hover {
+    background-color: #a7639b;
+    color: #000;
+}
+
+.middle-wrapper {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr;
+    margin-top: 175px;
+    background-image: url(../images/fondo.jpeg);
+    display: grid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container_recetas {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr;
+    margin-top: 175px;
+    background-image: url(../images/fondo.jpeg);
+    display: grid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.middle-wrapper h2 {
+    background-color: #9A0080;
+    color: whitesmoke;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.middle-wrapper li {
+    margin-left: 30px;
+}
+
+.fondo_texto {
+    background-color: rgb(249, 208, 242, 0.7);
+    margin-left: 20px;
+    color: #000;
+    width: 90%;
+    margin-top: 5px;
+    font-size: small;
+
+}
+
+.fondo_receta1>h2 {
+    background-image: url(../images/harinas.jpg);
+    width: 100%;
+    height: 300px;
+    opacity: 70%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo_receta2>h2 {
+    background-image: url(../images/pan\ de\ campo.jpg);
+    width: 100%;
+    height: 300px;
+    opacity: 70%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo_receta3>h2 {
+    background-image: url(../images/pizzasintacc.jpg);
+    width: 100%;
+    height: 300px;
+    opacity: 70%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo_receta4 h2 {
+    background-image: url(../images/rapiditas.jpg);
+    width: 100%;
+    height: 300px;
+    opacity: 70%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo_receta5 h2 {
+    background-image: url(../images/galletas.jpg);
+    width: 100%;
+    height: 300px;
+    opacity: 70%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_recetas h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #000;
+    font-size: 50px;
+    font-style: oblique;
+}
+
+.container_locales {
+    margin-top: 175px;
+    background-image: url(../images/fondo.jpeg);
+    display: flex;
+    flex-direction: column;
+}
+
+.introduccion {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div table {
+    margin-bottom: 10px;
+}
+
+
+th {
+    background-color: #80c055;
+    color: black;
+
+}
+
+td {
+    color: rgb(255, 254, 254);
+    background-color: #a7639b;
+    padding: 0 5px;
+}
+
+table td tr {
+    border-collapse: collapse;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-small;
+    align-items: center;
+}
+
+
+.negocios {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 30px;
+    background-color: #f9d0f2;
+}
+
+.negocios h3 {
+    font-size: xx-large;
+}
+
+form input {
+    width: 350px;
+}
+
+form button {
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.bloque,
+h3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Dancing Script', cursive;
+    background-color: #f9d0f2;
+}
+
+.bloque {
+    color: #000;
+}
+
+
+
+.Resaltar_fila {
+    background-color: rgb(253, 253, 84);
+    color: #000;
+}
+
+.validacion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+    font-family: 'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+}
+
+.validacion button {
+    margin-bottom: 10px;
+}
+
+.validacion h3 {
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+aside {
+    background-color: #a7639b;
+    color: whitesmoke;
+    width: 100%;
+    margin-top: 20px;
+    font-size: small;
+}
+
+aside h3 {
+    background-color: #80c055;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    background-color: #9A0080;
+    color: white;
+    margin-top: 15px;
+    height: 30px;
+    width: 100%;
+}
+
+.middle-wrapper div h2 {
+    background-image: url("images/harinas.jpg");
+}
+
+.btnApi {
+    border: none;
+    background: transparent;
+}
+
+tr .tdApi {
+    border: none;
+    background: transparent;
+}
+
+@media only screen and (min-width: 660px) {
+    a img {
+        display: flex;
+        height: 175px;
+        margin-bottom: 0px;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        color: #ffffff;
+        font-size: 50px;
+        font-style: oblique;
+    }
+
+    .btn_menu {
+        display: none;
+    }
+
+    /* cambiamos la direccion del flex */
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .middle-wrapper {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    div.centrarTabla table {
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .container_recetas {
+        grid-template-columns: 4fr;
+    }
+
+    div .introduccion h2,
+    P {
+        text-align: center;
+    }
+
+    .container_recetas h2 {
+        font-size: 100px;
+    }
+
+    .carga_usuario,
+    .modificar_usuario {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+}

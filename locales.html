@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Oleo+Script+Swash+Caps&family=Square+Peg&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a2c0eba7c6.js" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="celilogo.ico">
+    <title>CeliSerLocales</title>
+</head>
+
+<body class="container">
+    <header>
+
+        <a href="index.html"><img src="images/celilogo.png"></a>
+        <h1>Todo para Celiacos</h1>
+        <div class="btn_menu"><a>MENÚ</a></div>
+
+
+        <div class="menu">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recetas.html">Recetas</a></li>
+                <li><a href="locales.html">Locales</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container_locales">
+        <div class="introduccion">
+            <h2>Locales y restaurantes en Tandil</h2>
+            <p>La siguiente tabla muestra los locales y restaurantes dentro de la ciudad de Tandil, que disponen de
+                productos y menues aptos para celiacos.</p>
+        </div>
+
+        <div class="centrarTabla">
+            <table class="todaTabla">
+                <Thead>
+                    <tr>
+                        <th>Nombre del Negocio</th>
+                        <th>Calle</th>
+                        <th>Altura</th>
+                        <th>Telefono</th>
+                        <th>Redes Sociales</th>
+                        <th>Tipo de negocio</th>
+                    </tr>
+                </Thead>
+                <tbody id="tabla">
+                    <tr>
+                        <td>Celimundo</td>
+                        <td>Chacabuco</td>
+                        <td>1460</td>
+                        <td>249-4331215</td>
+                        <td>@celimundosintacctandil</td>
+                        <td>Local</td>
+                    </tr>
+                    <tr>
+                        <td>Celiexpress</td>
+                        <td>Sta. Ma. de oro</td>
+                        <td>261</td>
+                        <td>249-4533451</td>
+                        <td>@celiexpress</td>
+                        <td>Local</td>
+                    </tr>
+                    <tr>
+                        <td>Mi Refugio sin TACC Tandil</td>
+                        <td>Av. Cabildo</td>
+                        <td>1425</td>
+                        <td>249-4380010</td>
+                        <td>@mirefugiosintacctandil</td>
+                        <td>Local</td>
+                    </tr>
+                    <tr>
+                        <td>Nostro Pizza y Pasta</td>
+                        <td>Rodriguez</td>
+                        <td>588</td>
+                        <td>249-4220099</td>
+                        <td>@nostro_tandil</td>
+                        <td>Restaurante</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="bloque">
+            <h3> ¿Queres agregar tu negocio? </h3>
+            <form class="carga_usuario" id="form_tabla_dinamica">
+                <input type="text" name="" value="" id="Nombre" placeholder="Nombre del negocio">
+                <input type="text" name="" value="" id="Calle" placeholder="Calle">
+                <input type="text" name="" value="" id="Altura" placeholder="Altura">
+                <input type="text" name="" value="" id="Telefono" placeholder="Telefono">
+                <input type="text" name="" value="" id="Red_social" placeholder="Red social">
+                <select name="" id="Tipo_negocio">
+                    <option value="Restaurante">
+                        Restaurante
+                    </option>
+                    <option value="Local">
+                        Local
+                    </option>
+                    <option value="Almacen">
+                        Almacen
+                    </option>
+                </select>
+                <div>
+                    <button class="botonera_form" type="submit" id="btnAdd">Agregar</button>
+                </div>
+            </form>
+
+            <h3> ¿Queres modificar tu negocio? </h3>
+            <form class="modificar_usuario" id="form_tabla_modificada">
+                <input type="text" name="" value="" id="NombreMod" placeholder="Nombre del negocio">
+                <input type="text" name="" value="" id="CalleMod" placeholder="Calle">
+                <input type="text" name="" value="" id="AlturaMod" placeholder="Altura">
+                <input type="text" name="" value="" id="TelefonoMod" placeholder="Telefono">
+                <input type="text" name="" value="" id="Red_socialMod" placeholder="Red social">
+                <select name="" id="Tipo_negocioMod">
+                    <option value="Restaurante">
+                        Restaurante
+                    </option>
+                    <option value="Local">
+                        Local
+                    </option>
+                    <option value="Almacen">
+                        Almacen
+                    </option>
+                </select>
+                <div>
+                    <button class="botonera_form" type="button" id="btnModificar">Editar</button>
+                </div>
+            </form>
+        </div>
+        <div class="validacion">
+            <h3 id="titulo_validacion">Ingrese los caracteres de la imagen:</h3>
+            <div id="cuerpo_validacion">
+                <!--muestra el texto captcha-->
+                <span id="captcha"></span>
+                <!--recuadro para introducir el captcha-->
+                <input id="ingreso" type="text" name="text">
+
+                <!--boton par enviar captcha-->
+                <button type="button" id="btn-enviar"> Enviar</button>
+
+                <!--para mostrar la salida basada en el texto que se introdujo-->
+                <span id="output"></span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>CeliSer, todo para Celiacos. Copyright © 2015–2021 · Todos los derechos reservados</p>
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
